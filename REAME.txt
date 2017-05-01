@@ -1,9 +1,9 @@
 This project is my first spring boot application for Bell.
 
 ## Table of content
-
 - [Install](#install)
 - [Features](#features)
+- [Assumption] (#Assumption)
 
 ## Install
 
@@ -40,3 +40,9 @@ localhost:8080/cart/:id/:productId: Add a product to an user cart from the userI
 Delete request
 localhost:8080/cart/:id/:productId: Delete a product to an user cart from the userId and productId specified.
 
+##Assumption
+
+I assume that there is only one cart per user.
+I provide the ability to add multiple quantity of product for a given user.
+Also, the quantity will be decremented each time the user delete a product from his cart.
+I didn't provide the connection/disconnection of an user.
