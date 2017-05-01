@@ -1,0 +1,42 @@
+This project is my first spring boot application for Bell.
+
+## Table of content
+
+- [Install](#install)
+- [Features](#features)
+
+## Install
+
+From your Git Bash do "git clone https://github.com/sulf4t/springBootBell"
+
+IntelliJ
+1 - Open IntelliJ
+2 - Click Import Project 
+3 - Select the pom.xml file from the repository you cloned.
+4 - Next
+5 - Select the maven project then Next.
+6 - Select a JDK 1.8. then Next
+7 - Set your project Name then Finish
+
+You can Launch Main.java in src.main.java
+
+
+## Features
+
+Once you started the server you can do
+
+Get Request : 
+localhost:8080/user : Show All users
+localhost:8080/user/:id : Show user with specified id.
+
+localhost:8080/products : Show All Products
+localhost:8080/products/:id : Show products with specified id.
+
+localhost:8080/cart/:id : Show user cart from specified id.
+
+POST request
+localhost:8080/cart/:id/:productId: Add a product to an user cart from the userId and productId specified.
+
+Delete request
+localhost:8080/cart/:id/:productId: Delete a product to an user cart from the userId and productId specified.
+
